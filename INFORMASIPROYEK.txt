@@ -1,0 +1,75 @@
+# Identitas Mahasiswa
+NIM     : 10121231
+Nama    : Agustinus Wesly Sitanggang
+Kelas   : IF-6
+
+
+# Tentang Project
+
+Project ini dibuat sebagai salah satu syarat mengikuti UTS mata kuliah Penerapan Teknologi Internet Universitas Komputer Indonesia. Project berupa aplikasi e-commerce berbasis web sederhana yang menggunakan beberapa teknologi web framework.
+
+## Tech Stack
+
+-   Laravel
+-   Inertia.js
+-   Vue.js
+-   Tailwind.css
+-   Shadcn-ui (Radix vue + Tailwind)
+
+## Prerequisites
+
+Untuk menjalankan project ini maka wajib memiliki beberapa program dengan versi minimal sebagai berikut : 
+-   PHP v.8.1.2 atau diatasnya
+-   Composer v.2.5.8 atau diatasnya
+-   Node.js v.18.17.1 atau diatasnya
+-   NPM v.9.6.7 atau diatasnya
+-   MySQL
+
+
+#### Install dependencies
+
+Jalankan command ini di terminal : 
+
+composer install
+npm install
+
+
+
+#### Pada file .env isi variable dibawah sesuai konfigurasi mysql pada perangkat anda : 
+
+DB_CONNECTION=
+DB_HOST=
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+
+
+#### Jalankan command ini untuk mengenerate key app
+
+php artisan key:generate
+
+
+#### Jalankan migration (Pastikan konfigurasi mysql pada .env sudah benar & sesuai)
+
+php artisan migrate
+
+
+### Menjalankan Seeder : 
+
+php artisan db:seed
+
+
+#### Menjalankan aplikasi : 
+
+php artisan serve
+
+### Jalankan command ini di terminal baru : 
+
+npm run dev
+
+
+### Buka link ini di browser : 
+
+http://127.0.0.1:8000
+
